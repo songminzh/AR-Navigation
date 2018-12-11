@@ -57,7 +57,11 @@ class ViewController: UIViewController {
         }
         
         // Update user location and show distance from current location to nodes added
-        updateUserLocationTimer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ViewController.updateUserLocation), userInfo: nil, repeats: true)
+        updateUserLocationTimer = Timer.scheduledTimer(timeInterval: 3.0,
+                                                       target: self,
+                                                       selector: #selector(ViewController.updateUserLocation),
+                                                       userInfo: nil,
+                                                       repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -122,11 +126,23 @@ private extension ViewController {
         let defaultDistance: String = "10m"
         let imageName: String = "bubble"
         
-        let huanghelou = buildNode(latitude: 30.544621, longtitude: 114.302532, altitude: 10.0, imageName: imageName, title: "黄鹤楼", distance: defaultDistance)
-        nodes.append(huanghelou)
+        let 北京 = buildNode(latitude: 30.585214, longtitude: 114.295336, altitude: 10.0, imageName: imageName, title: "北京", distance: defaultDistance)
+        nodes.append(北京)
         
-        let donghu = buildNode(latitude: 30.567554, longtitude: 114.375306, altitude: 6.0, imageName: imageName, title: "东湖", distance: defaultDistance)
-        nodes.append(donghu)
+        let 上海 = buildNode(latitude: 31.190874, longtitude: 121.518626, altitude: 60.0, imageName: imageName, title: "上海", distance: defaultDistance)
+        nodes.append(上海)
+        
+        let 南京 = buildNode(latitude: 32.126003, longtitude: 118.881907, altitude: 140.0, imageName: imageName, title: "南京", distance: defaultDistance)
+        nodes.append(南京)
+        
+        let 杭州 = buildNode(latitude: 30.208442, longtitude: 120.244212, altitude: 180.0, imageName: imageName, title: "杭州", distance: defaultDistance)
+        nodes.append(杭州)
+        
+        let 香港 = buildNode(latitude: 22.377168, longtitude: 114.267649, altitude: 300.0, imageName: imageName, title: "香港", distance: defaultDistance)
+        nodes.append(香港)
+        
+        let 台北 = buildNode(latitude: 24.793382, longtitude: 121.650462, altitude: 180.0, imageName: imageName, title: "台北", distance: defaultDistance)
+        nodes.append(台北)
         
         return nodes
     }

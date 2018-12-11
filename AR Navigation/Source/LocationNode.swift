@@ -86,7 +86,7 @@ open class LocationAnnotationNode: LocationNode {
         
         let titleLabel = UILabel.init(frame: CGRect(x: 0.0, y: 0.0, width: 120.0, height: 60.0))
         titleLabel.textColor = UIColor.darkText
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         titleLabel.text = title
         titleLabel.textAlignment = NSTextAlignment.center
         bgImageView.addSubview(titleLabel)
