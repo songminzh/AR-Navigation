@@ -64,6 +64,7 @@ class ViewController: UIViewController {
                                                        repeats: true)
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("run")
@@ -125,8 +126,8 @@ private extension ViewController {
         
         let defaultDistance: String = "10m"
         let imageName: String = "bubble"
-        
-        let 北京 = buildNode(latitude: 30.585214, longtitude: 114.295336, altitude: 10.0, imageName: imageName, title: "北京", distance: defaultDistance)
+
+        let 北京 = buildNode(latitude: 39.918058, longtitude: 116.397026, altitude: 10.0, imageName: imageName, title: "北京", distance: defaultDistance)
         nodes.append(北京)
         
         let 上海 = buildNode(latitude: 31.190874, longtitude: 121.518626, altitude: 60.0, imageName: imageName, title: "上海", distance: defaultDistance)
