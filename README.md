@@ -1,4 +1,4 @@
 # AR-Navigation
-Use ARKit and CoreLocation to navigate
+Use ARKit & CoreLocation
 
-Base on the project [ARKit+CoreLocation](https://github.com/ProjectDent/ARKit-CoreLocation)
+Based on [ARKit+CoreLocation](https://github.com/ProjectDent/ARKit-CoreLocation)
